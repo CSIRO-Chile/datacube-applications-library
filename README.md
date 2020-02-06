@@ -6,10 +6,10 @@ This repository is a placeholder/starting point for the Open Data Cube (https://
 Development of this repository will be incremental, with the following broad steps anticipated:
 
 1. ~~Create repository in my account.~~
-2. Add contents from current DCAL notebooks (as published online, circa 6 Feb 2020).
+2. ~~Add contents from current DCAL notebooks (as published online, circa 6 Feb 2020).~~
   * ~~Fork from FrontierSI original: https://github.com/frontiersi/odc-sandbox-notebooks/tree/master/dcal~~
   * ~~My local fork here: https://github.com/gamedaygeorge/odc-sandbox-notebooks~~
-  * Copy /dcal files into my new repo.
+  * ~~Copy /dcal files into my new repo.~~
 3. Work on adaptation of new DCAL notebooks (with ODC developers).
 4. Confirm DCAL notebooks work on ODC Sandbox and/or standard ODC Docker deployment.
 5. When ready, transfer repository to opendatacube organisation.
