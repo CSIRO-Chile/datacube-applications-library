@@ -1,6 +1,11 @@
 # datacube-applications-library
 Data Cube Applications Library (DCAL)
 
+WARNINGS and NOTES:
+  * Currently this is a work in progress.
+  * Notebooks have run succesfully in the past, but aren't currently 'validated' against any particular deployment or version of ODC.
+  * Ideally 'one day' these notebooks will run out of the box for a Cube in a Box (https://github.com/opendatacube/cube-in-a-box) and/or ODC Sandbox deployment.
+
 This repository is a placeholder/starting point for the Open Data Cube (https://github.com/opendatacube) Data Cube Applications Libary (DCAL). You can read more about here: https://www.opendatacube.org/dcal.
 
 Development of this repository will be incremental, with the following broad steps anticipated:
