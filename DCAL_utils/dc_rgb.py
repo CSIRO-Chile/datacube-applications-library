@@ -2,7 +2,10 @@ import matplotlib.pyplot as plt
 from time import time
 import numpy as np
 
-from .plotter_utils import figure_ratio, xarray_set_axes_labels, retrieve_or_create_fig_ax
+# GD commented out this line to fix relative import issues.
+#from .plotter_utils import figure_ratio, xarray_set_axes_labels, retrieve_or_create_fig_ax
+# GD added a new plotter_utils import.
+from plotter_utils import figure_ratio, xarray_set_axes_labels, retrieve_or_create_fig_ax
 
 # Change the bands (RGB) here if you want other false color combinations
 def rgb(dataset, at_index=0, x_coord='longitude', y_coord='latitude',

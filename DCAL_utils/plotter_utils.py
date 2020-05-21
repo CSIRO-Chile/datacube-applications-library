@@ -27,10 +27,17 @@ import pytz
 from scipy import stats
 import warnings
 
-from .dc_mosaic import ls7_unpack_qa
-from .curve_fitting import gaussian_fit, poly_fit
-from .scale import xr_scale, np_scale
-from .dc_utilities import ignore_warnings, perform_timeseries_analysis
+# GD commented out these four lines to fix relative import issues.
+#from .dc_mosaic import ls7_unpack_qa
+#from .curve_fitting import gaussian_fit, poly_fit
+#from .scale import xr_scale, np_scale
+#from .dc_utilities import ignore_warnings, perform_timeseries_analysis
+# GD added four new imports.
+from dc_mosaic import ls7_unpack_qa
+from curve_fitting import gaussian_fit, poly_fit
+from scale import xr_scale, np_scale
+from dc_utilities import ignore_warnings, perform_timeseries_analysis
+
 
 from scipy.interpolate import interp1d
 

@@ -30,8 +30,12 @@ from collections import OrderedDict
 import hdmedians as hd
 
 import datacube
-from . import dc_utilities as utilities
-from .dc_utilities import create_default_clean_mask
+# GD commented out these two lines to fix relative import issues.
+#from . import dc_utilities as utilities
+#from .dc_utilities import create_default_clean_mask
+# GD added next two lines as a new dc_utilities import.
+import dc_utilities as utilities
+from dc_utilities import create_default_clean_mask
 import hdmedians as hd
 
 """

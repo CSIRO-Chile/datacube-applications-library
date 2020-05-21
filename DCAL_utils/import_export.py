@@ -1,6 +1,10 @@
 import time
 import numpy as np
-from . import dc_utilities
+# GD commented out this line to fix relative import issues.
+#from . import dc_utilities
+# GD added next line as a new dc_utilities import.
+import dc_utilities
+
 
 ## Export ##
 

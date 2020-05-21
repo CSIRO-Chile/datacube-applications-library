@@ -1,4 +1,7 @@
-from .dc_mosaic import (ls7_unpack_qa, ls8_unpack_qa, ls5_unpack_qa)
+# GD commented out the next line to avoid relative import issue.
+#from .dc_mosaic import (ls7_unpack_qa, ls8_unpack_qa, ls5_unpack_qa)
+# GD added the next line to remove relative import.
+from dc_mosaic import (ls7_unpack_qa, ls8_unpack_qa, ls5_unpack_qa)
 import numpy as np
 import xarray as xr
 from xarray.ufuncs import logical_and as xr_and
