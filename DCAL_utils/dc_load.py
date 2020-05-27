@@ -1,9 +1,16 @@
 import numpy as np
 import xarray as xr
-from .clean_mask import landsat_qa_clean_mask, landsat_clean_mask_invalid
+# GD commented out the next line to avoid relative import issue.
+#from .clean_mask import landsat_qa_clean_mask, landsat_clean_mask_invalid
+# GD added the next line to remove relative import.
+from clean_mask import landsat_qa_clean_mask, landsat_clean_mask_invalid
 from xarray.ufuncs import logical_and as xr_and
-from .sort import xarray_sortby_coord
-from .aggregate import xr_scale_res
+# GD commented out the next two lines to avoid relative import issue.
+#from .sort import xarray_sortby_coord
+#from .aggregate import xr_scale_res
+# GD added the next two lines to remove relative import.
+from sort import xarray_sortby_coord
+from aggregate import xr_scale_res
 
 def xarray_concat_and_merge(*args, concat_dim='time', sort_dim='time'):
     """

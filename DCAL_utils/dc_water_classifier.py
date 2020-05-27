@@ -24,8 +24,13 @@ import numpy as np
 import xarray as xr
 
 import datacube
-from . import dc_utilities as utilities
-from .dc_utilities import create_default_clean_mask
+# GD commented out the next two lines to avoid relative import issue.
+#from . import dc_utilities as utilities
+#from .dc_utilities import create_default_clean_mask
+# GD added the next line to remove relative import.
+import dc_utilities as utilities
+from dc_utilities import create_default_clean_mask
+
 # Command line tool imports
 import argparse
 import os

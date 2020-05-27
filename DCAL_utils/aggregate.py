@@ -1,7 +1,11 @@
 import numpy as np
 import xarray as xr
  
-from utils.data_cube_utilities.dc_time import \
+# GD commented out the next line to avoid relative import issue.
+#from utils.data_cube_utilities.dc_time import \
+#    _n64_datetime_to_scalar, _scalar_to_n64_datetime
+# GD added the next line to remove relative import.
+from dc_time import \
     _n64_datetime_to_scalar, _scalar_to_n64_datetime
 
 def get_bin_intervals(data, num_bins):
