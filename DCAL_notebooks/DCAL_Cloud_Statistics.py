@@ -7,13 +7,12 @@
 ################################
 
 # Import standard Python modules
+import sys
 import datacube
 import numpy as np
 import pandas as pd
 
-# Import DCAL Utilities
-# Add utils to the sys.path so that data_cube_utilities can be found.
-import sys
+# Import DCAL utilities containing function definitions used generally across DCAL
 sys.path.append('../DCAL_utils')
 
 # Import Mosaic functions
