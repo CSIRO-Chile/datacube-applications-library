@@ -26,6 +26,9 @@ from .dc_time import _n64_to_datetime, _n64_datetime_to_scalar, _scalar_to_n64_d
 
 from scipy.interpolate import interp1d
 
+# GD commented out this line to fix relative import issues.
+#from .plotter_utils_consts import n_pts_smooth, default_fourier_n_harm
+# GD add this line to fix relative import issues
 from .plotter_utils_consts import n_pts_smooth, default_fourier_n_harm
 
 def impute_missing_data_1D(data1D):
