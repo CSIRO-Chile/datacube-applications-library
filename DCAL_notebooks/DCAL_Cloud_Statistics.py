@@ -12,6 +12,11 @@ import datacube
 import numpy as np
 import pandas as pd
 
+import ipywidgets as widgets
+from ipywidgets import Button, Layout
+from IPython.display import display
+import functools
+
 # Import DCAL utilities containing function definitions used generally across DCAL
 sys.path.append('../DCAL_utils')
 
@@ -30,12 +35,13 @@ def build_cloud_coverage_table_landsat(product   = None,
                                longitude = None,
                                time     = None,
                                dc       = None,
-                               extra_band = 'green'): 
+                               extra_band = 'green'):
+    
     if product   is None: raise Exception("product argument is required")
     if platform  is None: raise Exception("platform argument is required")
     if latitude  is None: raise Exception("latitude argument is required")
     if longitude is None: raise Exception("longitude argument is required")
-    
+ 
     def clean_mask(ds, unpacking_func, bands):
         masks = [unpacking_func(ds, band) for band in bands]
         return np.logical_or(*masks).values
@@ -49,7 +55,8 @@ def build_cloud_coverage_table_landsat(product   = None,
                        platform = platform,
                        latitude = latitude,
                        longitude = longitude,
-                       measurements = [extra_band, 'pixel_qa'])
+                       measurements = [extra_band, 'pixel_qa'],
+                       group_by='solar_day')
     
     if time is not None: 
         load_params["time"] = time
