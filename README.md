@@ -15,6 +15,6 @@ Development of this repository will be incremental, with the following broad ste
   * ~~Fork from FrontierSI original: https://github.com/frontiersi/odc-sandbox-notebooks/tree/master/dcal~~
   * ~~My local fork here: https://github.com/gamedaygeorge/odc-sandbox-notebooks~~
   * ~~Copy /dcal files into my new repo.~~
-3. Work on the adaptation of the SEO's DCAL_notebooks as they are available. Create DCAL_utils as required to run these notebooks.
+3. [IN PROGRESS] Work on the adaptation of the SEO's DCAL_notebooks as they are available. Create DCAL_utils as required to run these notebooks.
 4. Adapt these notebooks to reference Landsat Collection 2 once it is available.
 5. Consider platform on which these notebooks could be deployed.
